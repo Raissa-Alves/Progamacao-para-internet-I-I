@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.titulo }}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <article class="post">
+        <h1>{{ post.titulo }}</h1>
+        <small>Publicado em {{ post.data_publicacao }}</small>
+        <p>{{ post.conteudo }}</p>
+    </article>
+
+    <a href="/blog/">⬅ Voltar</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 15px;
+}
+
+.post-list a {
+    font-size: 18px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.post-list a:hover {
+    text-decoration: underline;
+}
+
+.post {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+

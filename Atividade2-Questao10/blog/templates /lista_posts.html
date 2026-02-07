@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Blog</h1>
+
+    <ul class="post-list">
+        {% for post in posts %}
+            <li>
+                <a href="/blog/post/{{ post.data_publicacao.year }}/{{ post.data_publicacao.month|stringformat:'02d' }}/{{ post.slug }}/">
+                    {{ post.titulo }}
+                </a>
+                <span>{{ post.data_publicacao }}</span>
+            </li>
+        {% empty %}
+            <li>Nenhum post encontrado.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
